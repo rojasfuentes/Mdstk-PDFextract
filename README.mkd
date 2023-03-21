@@ -1,0 +1,17 @@
+Descripción
+Este script de Python se encarga de extraer información relevante de archivos PDF y guardarla en un archivo de Excel. En concreto, busca la información de "Id Pedido Cliente", "Código de Producto", "Lote", "Cantidad" y "Caducidad" de cada archivo PDF presente en una carpeta determinada.
+
+El script utiliza las librerías PyPDF2, re y openpyxl. PyPDF2 se encarga de leer el contenido de los archivos PDF, re se utiliza para buscar patrones específicos de texto y openpyxl se utiliza para escribir los datos en un archivo de Excel.
+
+Es recomendable utilizar un entorno virtual para ejecutar este script y asegurarse de instalar las dependencias necesarias (PyPDF2 y openpyxl). Para facilitar la ejecución del script, se proporciona un archivo .bat que configura el entorno virtual y ejecuta el script automáticamente.
+
+Instrucciones de uso
+Clonar o descargar el repositorio en tu ordenador.
+Abrir una terminal en la carpeta del proyecto.
+Crear un entorno virtual mediante el comando python -m venv env.
+Activar el entorno virtual mediante el comando .\env\Scripts\activate (Windows) o source env/bin/activate (Linux/Mac).
+Instalar las dependencias necesarias mediante el comando pip install -r requirements.txt.
+Colocar los archivos PDF que se desean procesar en la carpeta pdf_files.
+Ejecutar el script mediante el comando python main.py.
+El archivo de Excel resultante se encontrará en la carpeta output_files.
+Espero que esta descripción te sea útil. Si tienes alguna duda o sugerencia, no dudes en preguntarme.
