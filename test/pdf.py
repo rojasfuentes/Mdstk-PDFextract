@@ -20,7 +20,7 @@ barcodes = re.compile(r'barras:\s+([^\s]+)' )
 idPedido = re.compile(r'Original\s+([0-9]+)')
 
 # Recorrer todos los archivos PDF en la carpeta
-folder_path = 'rutas de los archivos pdf'
+folder_path = 'ruta de la carpeta donde se encuentran los archivos pdf'
 all_pages_info = []
 for filename in os.listdir(folder_path):
     if filename.endswith('.pdf'):
